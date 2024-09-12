@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "_comment" : "node 명령어에 따른 서버 및 프론트 실행 제어",
+    "_comment": "node 명령어에 따른 서버 및 프론트 실행 제어",
     "start": "node server/server.js",
     "server": "nodemon server/server.js",
     "client": "cd client && npm start",
@@ -13,5 +13,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.4"
+  }
 }
