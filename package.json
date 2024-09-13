@@ -8,7 +8,7 @@
     "start": "node server/server.js",
     "server": "nodemon server/server.js",
     "client": "cd client && npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"export PORT=5000\" \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
@@ -19,8 +19,12 @@
     "nodemon": "^3.1.4"
   },
   "dependencies": {
+    "build": "^0.1.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "express": "^4.21.0",
+    "http-proxy-middleware": "^3.0.2",
+    "npm-check-updates": "^17.1.1",
     "tailwind-merge": "^2.5.2",
     "typescript": "^5.6.2"
   }
