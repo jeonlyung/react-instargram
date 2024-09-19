@@ -10,6 +10,7 @@
  YOUR TYPESCRIPT VERSION: 4.9.5
 
 [시도방법]
+
 1. eslint 관련 패키지 최신 버전 설치 --> 해결안됨
 npm i eslint@latest @typescript-eslint/parser@latest @typescript-eslint/eslint-plugin@latest --save
 
@@ -19,3 +20,7 @@ npm install typescript@5.0.4
 3. eslint Version 5.16.0 다운그레이드 --> 해결안됨
 npm install eslint@^5.16.0 --save-dev
 npm install @typescript-eslint/parser@latest --save-dev
+
+4. root플젝 말고 client 플젝 typescript Version 변경(root가 아니다)
+cd client
+npm install typescript@5.0.4
