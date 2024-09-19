@@ -24,6 +24,7 @@ const Avatar = React.forwardRef<
     {...props}
   />
 ))
+//displayName을 설정 : 개발자 도구에서 컴포넌트의 이름을 명확하게 확인 가능
 Avatar.displayName = AvatarPrimitive.Root.displayName
 
 //AvatarImage : Avatar 실제 이미지가 들어가는 컴포넌트
@@ -41,6 +42,7 @@ const AvatarImage = React.forwardRef<
     {...props}
   />
 ))
+//displayName을 설정 : 개발자 도구에서 컴포넌트의 이름을 명확하게 확인 가능
 AvatarImage.displayName = AvatarPrimitive.Image.displayName
 
 //AvatarFallback : 이미지 로드에 실패하였을 때 표시되는 대체 요소
@@ -59,6 +61,7 @@ const AvatarFallback = React.forwardRef<
     {...props}
   />
 ))
+//displayName을 설정 : 개발자 도구에서 컴포넌트의 이름을 명확하게 확인 가능
 AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName
 
 //Avatar, AvatarImage, AvatarFallback 내보내기
