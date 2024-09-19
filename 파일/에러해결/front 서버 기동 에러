@@ -1,6 +1,21 @@
-[front 서버 기동 에러] : typescript 와 eslint Version 충돌 --> typescript 다운그레이드 후순위로 두고 해결 진행
+[front 서버 기동 에러] 
+ - typescript 와 eslint Version 충돌 --> typescript 다운그레이드 후순위로 두고 해결 진행
+ - typescript Version : 5.6.2
+
+[에러내용]
+ You are currently running a version of TypeScript which is not officially supported by typescript-estree.
+ You may find that it works just fine, or you may not.
+ SUPPORTED TYPESCRIPT VERSIONS: >=3.2.1 <3.5.0
  
+ YOUR TYPESCRIPT VERSION: 4.9.5
+
+[시도방법]
 1. eslint 관련 패키지 최신 버전 설치 --> 해결안됨
 npm i eslint@latest @typescript-eslint/parser@latest @typescript-eslint/eslint-plugin@latest --save
 
-2. 
+2. typescript Version 5.0.4 다운그레이드 --> 해결안됨
+npm install typescript@5.0.4
+
+3. eslint Version 5.16.0 다운그레이드 --> 해결안됨
+npm install eslint@^5.16.0 --save-dev
+npm install @typescript-eslint/parser@latest --save-dev
