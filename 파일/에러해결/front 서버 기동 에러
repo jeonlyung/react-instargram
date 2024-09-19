@@ -1,0 +1,6 @@
+[front 서버 기동 에러] : typescript 와 eslint Version 충돌 --> typescript 다운그레이드 후순위로 두고 해결 진행
+ 
+1. eslint 관련 패키지 최신 버전 설치 --> 해결안됨
+npm i eslint@latest @typescript-eslint/parser@latest @typescript-eslint/eslint-plugin@latest --save
+
+2. 
