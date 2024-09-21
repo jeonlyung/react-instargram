@@ -24,3 +24,6 @@ npm install @typescript-eslint/parser@latest --save-dev
 4. root플젝 말고 client 플젝 typescript Version 변경(root가 아니다)
 cd client
 npm install typescript@5.0.4
+
+5. OpenSSL 3.0이 포함된 Node.js V17+는 MD4 알고리즘을 OpenSSL 3.0의 레거시 공급자로 옮겼습니다. 
+export NODE_OPTIONS=--openssl-legacy-provider
