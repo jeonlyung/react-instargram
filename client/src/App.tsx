@@ -4,24 +4,26 @@ import { Button } from "./components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "./components/ui/card";
 import { Input } from "./components/ui/input";
 import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal, Home, Search, PlusSquare, User } from "lucide-react";
-import { cn } from './lib/utils'; // utils 파일에서 cn 함수 가져오기
+// utils 파일 import 추가(cn 가져오기)
+import { cn } from './lib/utils'; 
 
+// 데이터 하드 코딩 --> 나중에 DB 데이터 가져오기
 const posts = [
   {
     id: 1,
-    username: 'user1',
+    username: 'hsj',
     userImage: 'https://i.pravatar.cc/150?img=1',
     postImage: 'https://picsum.photos/id/1/600/600',
-    likes: 100,
-    caption: '아름다운 날씨!',
+    likes: 9999,
+    caption: '행복하세요...',
   },
   {
     id: 2,
-    username: 'user2',
+    username: 'user',
     userImage: 'https://i.pravatar.cc/150?img=2',
     postImage: 'https://picsum.photos/id/2/600/600',
     likes: 200,
-    caption: '맛있는 점심!',
+    caption: '꼭 행복하세요...',
   },
 ];
 
@@ -30,7 +32,7 @@ function App() {
     <div className={cn("min-h-screen bg-gray-100", "pt-4")}>
       <header className={cn("bg-white border-b", "sticky top-0 z-10")}>
         <div className={cn("max-w-5xl mx-auto px-4 py-2", "flex justify-between items-center")}>
-          <h1 className="text-xl font-bold">Instagram Clone</h1>
+          <h1 className="text-xl font-bold">Nonshim Instagram</h1>
           <nav className="flex space-x-4">
             <Button variant="ghost" size="icon">
               <Home className="h-6 w-6" />
