@@ -27,3 +27,7 @@ npm install typescript@5.0.4
 
 5. OpenSSL 3.0이 포함된 Node.js V17+는 MD4 알고리즘을 OpenSSL 3.0의 레거시 공급자로 옮겼습니다. 
 export NODE_OPTIONS=--openssl-legacy-provider
+
+6. eslint Version upgrade로 해결 완료
+npm install eslint@^9.0.0 --save-dev
+npm install --save
