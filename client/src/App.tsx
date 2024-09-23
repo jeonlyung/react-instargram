@@ -4,7 +4,7 @@ import { Button } from "./components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "./components/ui/card";
 import { Input } from "./components/ui/input";
 import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal, Home, Search, PlusSquare, User } from "lucide-react";
-// utils 파일 import 추가(cn 가져오기)
+// utils 파일 import 추가(cn 가져오기 --> CSS 클래스 이름을 병합하고 중복을 제거)
 import { cn } from './lib/utils'; 
 
 // 데이터 하드 코딩 --> 나중에 DB 데이터 가져오기
@@ -14,7 +14,7 @@ const posts = [
     username: 'hsj',
     userImage: 'https://i.pravatar.cc/150?img=1',
     postImage: 'https://picsum.photos/id/1/600/600',
-    likes: 9999,
+    likes: 1,
     caption: '행복하세요...',
   },
   {
@@ -22,7 +22,7 @@ const posts = [
     username: 'user',
     userImage: 'https://i.pravatar.cc/150?img=2',
     postImage: 'https://picsum.photos/id/2/600/600',
-    likes: 200,
+    likes: 1,
     caption: '꼭 행복하세요...',
   },
 ];
