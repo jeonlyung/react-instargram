@@ -3,7 +3,9 @@ import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/avatar";
 import { Button } from "./components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "./components/ui/card";
 import { Input } from "./components/ui/input";
-import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal, Home, Search, PlusSquare, User } from "lucide-react";
+import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal, Home, Search, PlusSquare, User, UserPlus } from "lucide-react";
+// clinet에서 react-router-dom설치 필요(npm install react-router-dom --save)
+import { Link } from "react-router-dom"
 // utils 파일 import 추가(cn 가져오기 --> CSS 클래스 이름을 병합하고 중복을 제거)
 import { cn } from './lib/utils'; 
 
@@ -45,7 +47,14 @@ function App() {
             <Button variant="ghost" size="icon">
               <PlusSquare className="h-6 w-6" />
               <span className="sr-only">만들기</span>
+            </Button>            
+            <Button variant="ghost" size="icon">
+              <Link to="/">
+                <UserPlus className="h-6 w-6" />
+                <span className="sr-only">회원가입</span>
+              </Link>
             </Button>
+
           </nav>
         </div>
       </header>
