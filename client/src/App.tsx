@@ -4,7 +4,7 @@ import { Button } from "./components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "./components/ui/card";
 import { Input } from "./components/ui/input";
 import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal, Home, Search, PlusSquare, User, UserPlus, Link } from "lucide-react";
-// clinet에서 react-router-dom설치 필요(npm install react-router-dom --save)
+// client에서 react-router-dom설치 필요(npm install react-router-dom --save)
 import { useNavigate } from 'react-router-dom';
 // utils 파일 import 추가(cn 가져오기 --> CSS 클래스 이름을 병합하고 중복을 제거)
 import { cn } from './lib/utils'; 
