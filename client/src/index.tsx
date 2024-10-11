@@ -3,8 +3,10 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import Signup from './page/signup/Signup';
 import './index.css';
+
+import Signup from './page/signup/Signup';
+import DirectMessages from './page/dm/DirectMessages';
 
 const container = document.getElementById('root');
 
@@ -16,14 +18,9 @@ createRoot(container).render(
     <React.StrictMode>
       <BrowserRouter>
         <Routes>
-          <Route
-            path = "/"
-            element = { <App/> }
-          />
-          <Route
-            path = "/signup"
-            element = {<Signup/>}
-          />
+          <Route path = "/" element = { <App/> } />
+          <Route path = "/signup" element = {<Signup/>} />
+          <Route path = "/dm/directMessages" element = {<DirectMessages/>} />
         </Routes>
       </BrowserRouter>
     </React.StrictMode>
