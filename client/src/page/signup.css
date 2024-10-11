@@ -1,0 +1,105 @@
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-wrapper {
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+  }
+  
+  .logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 48px;
+    color: #262626;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    padding: 9px 0;
+    margin: 5px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .button {
+    padding: 5px 0;
+    margin: 10px 0;
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .or {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .line {
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+  
+  .or-text {
+    margin: 0 10px;
+    color: #8e8e8e;
+    font-size: 12px;
+  }
+  
+  .facebook-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    background-color: #385185;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .facebook-icon {
+    margin-right: 8px;
+  }
+  
+  .terms {
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-top: 10px;
+  }
+  
+  .link {
+    color: #00376b;
+    text-decoration: none;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #262626;
+  }
+  

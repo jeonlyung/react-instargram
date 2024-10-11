@@ -1,9 +1,10 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import Signup from './page/Signup';
+import './index.css';
 
 const container = document.getElementById('root');
 
@@ -12,11 +13,20 @@ if (!container) { // container 빈값 체크
 }
 
 createRoot(container).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
+    <React.StrictMode>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path = "/"
+            element = { <App/> }
+          />
+          <Route
+            path = "/signup"
+            element = {<Signup/>}
+          />
+        </Routes>
+      </BrowserRouter>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
