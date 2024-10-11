@@ -34,7 +34,7 @@ function App() {
   const navigate = useNavigate();
   
   const handleSignupClick = () => {
-    navigate('/signup');
+    navigate('/signup/Signup');
   }
   
   return (

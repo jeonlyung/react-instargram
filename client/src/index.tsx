@@ -19,7 +19,7 @@ createRoot(container).render(
       <BrowserRouter>
         <Routes>
           <Route path = "/" element = { <App/> } />
-          <Route path = "/signup" element = {<Signup/>} />
+          <Route path = "/signup/Signup" element = {<Signup/>} />
           <Route path = "/dm/directMessages" element = {<DirectMessages/>} />
         </Routes>
       </BrowserRouter>
