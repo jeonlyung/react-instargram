@@ -1,8 +1,8 @@
 import React from 'react';
-import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/avatar";
-import { Button } from "./components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader } from "./components/ui/card";
-import { Input } from "./components/ui/input";
+import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/Avatar";
+import { Button } from "./components/ui/Button";
+import { Card, CardContent, CardFooter, CardHeader } from "./components/ui/Card";
+import { Input } from "./components/ui/Input";
 import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal, Home, Search, PlusSquare, User, UserPlus, Link } from "lucide-react";
 // client에서 react-router-dom설치 필요(npm install react-router-dom --save)
 import { useNavigate } from 'react-router-dom';
