@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 import './index.css';
 
+//페이지 이동 링크
 import Signup from './page/signup/Signup';
 import DirectMessages from './page/dm/DirectMessages';
 

@@ -33,10 +33,14 @@ const posts = [
 function App() {
   const navigate = useNavigate();
   
-  const handleSignupClick = () => {
+  const fnGoSignupClick = () => {
     navigate('/signup/Signup');
   }
   
+  const fnGoDmClick = () => {
+    navigate('/dm/DirectMessages');
+  }
+
   return (
     <div className={cn("min-h-screen bg-gray-100", "pt-4")}>
       <header className={cn("bg-white border-b", "sticky top-0 z-10")}>
@@ -47,7 +51,7 @@ function App() {
               <Home className="h-6 w-6" />
               <span className="sr-only">홈</span>
             </Button>
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" onClick={fnGoDmClick}>
               <MessageCircle className="h-6 w-6" />
               <span className="sr-only">메시지</span>
             </Button>
@@ -55,7 +59,7 @@ function App() {
               <PlusSquare className="h-6 w-6" />
               <span className="sr-only">만들기</span>
             </Button>            
-            <Button variant="ghost" size="icon" onClick={handleSignupClick}>
+            <Button variant="ghost" size="icon" onClick={fnGoSignupClick}>
               <UserPlus className="h-6 w-6" />
               <span className="sr-only">회원가입</span>
             </Button>
