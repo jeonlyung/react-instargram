@@ -1,9 +1,14 @@
 const express = require('express');
+const app = express();
 const path = require('path');
 const cors = require('cors');
 
-const app = express();
+//PORT 설정
 const PORT = process.env.PORT || 5000;
+
+
+//Mongo DB 설정
+const mongoose = require('mongoose');
 
 // Middleware
 app.use(cors());
