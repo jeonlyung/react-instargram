@@ -9,7 +9,6 @@ import { useNavigate } from 'react-router-dom';
 // utils 파일 import 추가(cn 가져오기 --> CSS 클래스 이름을 병합하고 중복을 제거)
 import { cn } from './lib/utils'; 
 
-//수정
 // 데이터 하드 코딩 --> 나중에 DB 데이터 가져오기
 const posts = [
   {
