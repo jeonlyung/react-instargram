@@ -22,6 +22,11 @@ const connect = mongoose.connect(config.mongoURI, {
 app.use(cors());
 app.use(express.json());
 
+
+//RequestMapping URL Mapping
+app.use('/api/users', require('./routes/users'));
+
+
 // Serve static files from the React app in production
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, 'client/build')));
