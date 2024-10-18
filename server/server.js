@@ -22,7 +22,6 @@ const connect = mongoose.connect(config.mongoURI, {
 app.use(cors());
 app.use(express.json());
 
-
 //RequestMapping URL Mapping
 app.use('/api/users', require('./routes/users'));
 

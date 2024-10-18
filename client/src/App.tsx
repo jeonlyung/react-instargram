@@ -45,7 +45,7 @@ function App() {
     <div className={cn("min-h-screen bg-gray-100", "pt-4")}>
       <header className={cn("bg-white border-b", "sticky top-0 z-10")}>
         <div className={cn("max-w-5xl mx-auto px-4 py-2", "flex justify-between items-center")}>
-          <h1 className="text-xl font-bold">Nonshim Instagram</h1>
+          <h1 className="text-xl font-bold">instargram</h1>
           <nav className="flex space-x-4">
             <Button variant="ghost" size="icon">
               <Home className="h-6 w-6" />
