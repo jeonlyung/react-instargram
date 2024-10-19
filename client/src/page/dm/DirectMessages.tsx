@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import Axios from 'axios';
+import {useSelector} from 'react-redux';
 import ChatWindow from '../../components/ui/ChatWindow';
 import MessageInput from '../../components/ui/MessageInput';
 import ChatList from '../../components/ui/ChatList';
+import { response } from 'express';
+
 
 const DirectMessages: React.FC = () => {
   const [selectedChatId, setSelectedChatId] = useState<number | null>(null);
@@ -24,6 +28,20 @@ const DirectMessages: React.FC = () => {
       }));
     }
   };
+
+  //한번만 실행
+  useEffect(() => {
+    const variable = {};
+    
+    Axios.post('/api/users/register', variable).then(response => {
+      if(response.data.success){
+        console.log(response.data.result);
+      }else{
+        console.log(response.data);
+      }
+    })
+  }, []);  
+
 
   return (
     <div className="direct-messages">

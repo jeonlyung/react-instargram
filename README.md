@@ -1,7 +1,6 @@
-# kra-project
+# react-instargram
 
-node.js 와 react을 이용한 웹 팀 프로젝트
-
+node.js 와 react을 이용한 인스타그램 카피 개발 팀 프로젝트
  - 도메인 : 인스타 SNS 카피
 
 
