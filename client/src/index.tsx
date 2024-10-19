@@ -6,8 +6,9 @@ import App from './App';
 import './index.css';
 
 //페이지 이동 링크
-import Signup from './page/signup/Signup';
+import Signup from './page/user/singnup/Signup';
 import DirectMessages from './page/dm/DirectMessages';
+import Login from './page/user/login/Login';
 
 const container = document.getElementById('root');
 
@@ -20,7 +21,8 @@ createRoot(container).render(
       <BrowserRouter>
         <Routes>
           <Route path = "/" element = { <App/> } />
-          <Route path = "/signup/Signup" element = {<Signup/>} />
+          <Route path = "/user/signup/Signup" element = {<Signup/>} />
+          <Route path = "/user/login/Login" element = {<Login/>} />
           <Route path = "/dm/directMessages" element = {<DirectMessages/>} />
         </Routes>
       </BrowserRouter>

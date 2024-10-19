@@ -1,9 +1,10 @@
 // src/page/Signup.tsx
 import React, { FormEvent } from 'react';
 import { Link } from 'react-router-dom';
-import { cn } from '../../lib/utils'; // classnames 유틸리티 함수
+import { cn } from '../../../lib/utils'; // classnames 유틸리티 함수
 import './signup.css';
 //import '@fortawesome/fontawesome-free/css/all.min.css'; // Font Awesome CSS 임포트
+import { useNavigate } from 'react-router-dom';
 
 const Signup: React.FC = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -15,22 +16,9 @@ const Signup: React.FC = () => {
     <div className={cn("signup-container")}>
       <div className={cn("form-wrapper")}>
         <h1 className={cn("logo")}>Nonshim Instagram</h1>
-        <button
-          type="button"
-          className={cn("facebook-button")}
-          onClick={() => {
-            console.log('Facebook 로그인 버튼 클릭됨');
-          }}
-        >
-          <i className="fab fa-facebook-f facebook-icon"></i> Facebook으로 로그인
-        </button>
         <div className="social-buttons">
-          <button className="social-button kakao-button">
-            KakaoTalk으로 로그인
-          </button>
-          <button className="social-button naver-button">
-            Naver로 로그인
-          </button>
+          <img className={cn("kakao-button")} src="/image/kakaoLogin/kakao_login_largeBtn.png" />
+          <img className={cn("naver-button")} src="/image/naverLogin/naver_login_mediumBtn.png" />
         </div>
         <div className={cn("or")}>
           <div className="line"></div>
@@ -88,7 +76,7 @@ const Signup: React.FC = () => {
       </div>
       <div className={cn("footer")}>
         <p className="text-gray-600 text-sm">
-          계정이 있으신가요? <Link to="/login" className="link">로그인</Link>
+          계정이 있으신가요? <Link to="/user/login/Login" className="link">로그인</Link>
         </p>
       </div>
     </div>

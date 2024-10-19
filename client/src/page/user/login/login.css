@@ -1,0 +1,94 @@
+
+
+html {
+  font-size: 16px; /* 기본 폰트 크기 설정 (선택 사항) */
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #fafafa;
+}
+
+.login-box {
+  background: #fff;
+  padding: 2.5rem; /* 40px → 2.5rem */
+  border: 0.0625rem solid #dbdbdb; /* 1px → 0.0625rem */
+  border-radius: 0.0625rem; /* 1px → 0.0625rem */
+  width: 21.875rem; /* 350px → 21.875rem */
+  text-align: center;
+  margin-bottom: 0.625rem; /* 10px → 0.625rem */
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5625rem 0; /* 9px → 0.5625rem */
+  margin: 0.3125rem 0; /* 5px → 0.3125rem */
+  border: 0.0625rem solid #dbdbdb; /* 1px → 0.0625rem */
+  border-radius: 0.1875rem; /* 3px → 0.1875rem */
+  background: #fafafa;
+  text-align: center;
+  font-size: 0.875rem; /* 14px → 0.875rem */
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.3125rem 0; /* 5px → 0.3125rem */
+  background: #3897f0;
+  border: none;
+  border-radius: 0.1875rem; /* 3px → 0.1875rem */
+  color: white;
+  font-weight: bold;
+  margin-top: 0.625rem; /* 10px → 0.625rem */
+  cursor: pointer;
+  font-size: 1rem; /* 추가: 버튼 텍스트 크기 조정 */
+}
+
+.login-button:hover {
+  background: #3071e7;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0; /* margin */
+}
+
+.or .line {
+  flex-grow: 1;
+  height: 0.0625rem; /* 1px to rem */
+  background-color: #ccc;
+}
+
+.or-text {
+  margin: 0 1rem; /* margin */
+  color: #888;
+  font-weight: bold;
+}
+.signup-box {
+  background: #fff;
+  padding: 0.625rem; /* 10px → 0.625rem */
+  border: 0.0625rem solid #dbdbdb; /* 1px → 0.0625rem */
+  border-radius: 0.0625rem; /* 1px → 0.0625rem */
+  width: 21.875rem; /* 350px → 21.875rem */
+  text-align: center;
+  font-size: 0.875rem; /* 14px → 0.875rem */
+}
+
+.signup-box a {
+  color: #3897f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-box a:hover {
+  text-decoration: underline;
+}
+
+.kakao-login-button, .naver-login-button {
+  text-align: center;
+  padding: 0.3rem; /* padding */
+}

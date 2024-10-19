@@ -17,11 +17,11 @@
 }
 
 .logo {
-  font-family: 'Brush Script MT', 'Segoe Script', cursive; /* ì›¹ ì•ˆì „ ìŠ¤í¬ë¦½íŠ¸ í°íŠ¸ ì‚¬ìš© */
+  font-family: 'Brush Script MT', 'Segoe Script', cursive; /* À¥ ¾ÈÀü ½ºÅ©¸³Æ® ÆùÆ® »ç¿ë */
   font-size: 2.5rem; /* font size */
   font-weight: bold;
   text-align: center;
-  color: #000; /* ê¸€ììƒ‰ì„ ê²€ì •ìƒ‰ìœ¼ë¡œ ì„¤ì • */
+  color: #000; /* ±ÛÀÚ»öÀ» °ËÁ¤»öÀ¸·Î ¼³Á¤ */
   margin-bottom: 1.5rem; /* margin-bottom */
   text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.2); /* shadow */
 }
@@ -152,22 +152,24 @@
   }
 }
 
-/* ì˜¤ë¥˜ ë©”ì‹œì§€ ìŠ¤íƒ€ì¼ë§ */
+/* ¿À·ù ¸Ş½ÃÁö ½ºÅ¸ÀÏ¸µ */
 .error-message {
   color: #e74c3c;
   font-size: 0.875rem; /* font size */
   margin-top: 0.25rem; /* margin-top */
 }
 
+
 .social-buttons {
   display: flex;
-  justify-content: space-between; /* ì–‘ìª½ ì •ë ¬ */
-  margin: 1.25rem 0; /* margin */
+  justify-content: center; /* °¡¿îµ¥ Á¤·Ä */
+  margin-left: -22rem;
+  margin-right: -22rem;
 }
 
 .social-button {
   flex: 1;
-  margin: 0 0.3rem; /* 5px to rem */
+  margin: 0 0.3rem 0 -3rem; /* 5px to rem */
   padding: 0.625rem; /* padding */
   background-color: #f1f1f1;
   border: none;
@@ -176,20 +178,11 @@
 }
 
 .kakao-button, .naver-button {
-  width: 100%;
-  margin: 0.3rem 0.3rem; /* 5px to rem */
+  text-align: center;
+  width: 20%;
+  margin: 0.3rem; /* 5px to rem */
   padding: 0.625rem; /* padding */
-  border: none;
-  border-radius: 0.3rem; /* 5px to rem */
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
 }
 
-.kakao-button {
-  background-color: #FEE500; /* KakaoTalk ìƒ‰ìƒ */
-}
 
-.naver-button {
-  background-color: #03C75A; /* Naver ìƒ‰ìƒ */
-}
+

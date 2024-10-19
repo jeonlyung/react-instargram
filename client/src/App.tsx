@@ -34,7 +34,7 @@ function App() {
   const navigate = useNavigate();
   
   const fnGoSignupClick = () => {
-    navigate('/signup/Signup');
+    navigate('/user/signup/Signup');
   }
   
   const fnGoDmClick = () => {
