@@ -10,8 +10,7 @@ node.js 와 react을 이용한 인스타그램 카피 개발 팀 프로젝트
 2. 프로젝트 사용 언어 및 툴
  - 사용언어
     - node.js
-    - react
-    - typeScript
+    - react, typescript
     
     - DB : mongodb
     - build : Gradle
