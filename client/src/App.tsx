@@ -29,7 +29,6 @@ const posts = [
   },
 ];
 
-
 function App() {
   const navigate = useNavigate();
   

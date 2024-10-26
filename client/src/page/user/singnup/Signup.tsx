@@ -2,14 +2,29 @@
 import React, { FormEvent } from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '../../../lib/utils'; // classnames 유틸리티 함수
+
 import './signup.css';
-//import '@fortawesome/fontawesome-free/css/all.min.css'; // Font Awesome CSS 임포트
-import { useNavigate } from 'react-router-dom';
 
 const Signup: React.FC = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // to-do 회원가입 로직을 추가
+  };
+  const handleKakaoSignup = (e: React.FormEvent) => {
+    e.preventDefault();
+    //kakao로그인 추가
+    console.log('카카오 로그인 시도!');
+    const CLIENT_ID = process.env.REACT_APP_CLIENT_ID; 
+    const REDIRECT_KAKAO_URI = process.env.REACT_APP_REDIRECT_KAKAO_URI;
+    //window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_KAKAO_URI}&response_type=code`;
+  };
+
+  const handleNaverSignup = (e: React.FormEvent) => {
+    e.preventDefault();
+    //naver로그인 추가
+    console.log('네이버 로그인 시도!');
+    window.location.href = `https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=CLIENT_ID&state=STATE_STRING&redirect_uri=CALLBACK_URL
+    `;
   };
 
   return (
@@ -17,8 +32,8 @@ const Signup: React.FC = () => {
       <div className={cn("form-wrapper")}>
         <h1 className={cn("logo")}>Nonshim Instagram</h1>
         <div className="social-buttons">
-          <img className={cn("kakao-button")} src="/image/kakaoLogin/kakao_login_largeBtn.png" />
-          <img className={cn("naver-button")} src="/image/naverLogin/naver_login_mediumBtn.png" />
+          <img className={cn("kakao-button")} onClick={handleKakaoSignup} src="/image/kakaoLogin/kakao_login_largeBtn.png" />
+          <img className={cn("naver-button")} onClick={handleNaverSignup} src="/image/naverLogin/naver_login_mediumBtn.png" />
         </div>
         <div className={cn("or")}>
           <div className="line"></div>
@@ -44,6 +59,7 @@ const Signup: React.FC = () => {
               placeholder="비밀번호"
               className={cn("input")}
               required
+
             />
           </div>
           <div className="input-group">
