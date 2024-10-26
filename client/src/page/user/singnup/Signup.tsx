@@ -16,7 +16,7 @@ const Signup: React.FC = () => {
     console.log('카카오 로그인 시도!');
     const CLIENT_ID = process.env.REACT_APP_CLIENT_ID; 
     const REDIRECT_KAKAO_URI = process.env.REACT_APP_REDIRECT_KAKAO_URI;
-    //window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_KAKAO_URI}&response_type=code`;
+    window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_KAKAO_URI}&response_type=code`;
   };
 
   const handleNaverSignup = (e: React.FormEvent) => {
