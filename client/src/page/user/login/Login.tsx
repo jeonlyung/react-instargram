@@ -15,8 +15,10 @@ const Login: React.FC = () => {
 
   const handleKakaoLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    //kakao로그인 추가
-    console.log('카카오 로그인 시도:');
+    console.log('카카오 로그인 시도!');
+    const CLIENT_ID = process.env.REACT_APP_CLIENT_ID; 
+    const REDIRECT_KAKAO_URI = process.env.REACT_APP_REDIRECT_KAKAO_URI;
+    window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_KAKAO_URI}&response_type=code`;
   };
 
   const handleNaverLogin = (e: React.FormEvent) => {
@@ -53,8 +55,8 @@ const Login: React.FC = () => {
           <span className="or-text">또는</span>
           <div className="line"></div>
         </div>
-        <img className={"naver-login-button"} src="/image/kakaoLogin/kakao_login_largeBtn.png" />
-        <img className={"kakao-login-button"} src="/image/naverLogin/naver_login_mediumBtn.png" />
+        <img className={"naver-login-button"} onClick={handleKakaoLogin} src="/image/kakaoLogin/kakao_login_largeBtn.png" />
+        <img className={"kakao-login-button"} onClick={handleNaverLogin} src="/image/naverLogin/naver_login_mediumBtn.png" />
       </div>
       <div className="signup-box">
         계정이 없으신가요? <Link to="/user/signup/Signup">가입하기</Link>

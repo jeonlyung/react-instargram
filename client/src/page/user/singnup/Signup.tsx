@@ -12,7 +12,6 @@ const Signup: React.FC = () => {
   };
   const handleKakaoSignup = (e: React.FormEvent) => {
     e.preventDefault();
-    //kakao로그인 추가
     console.log('카카오 로그인 시도!');
     const CLIENT_ID = process.env.REACT_APP_CLIENT_ID; 
     const REDIRECT_KAKAO_URI = process.env.REACT_APP_REDIRECT_KAKAO_URI;
@@ -30,7 +29,7 @@ const Signup: React.FC = () => {
   return (
     <div className={cn("signup-container")}>
       <div className={cn("form-wrapper")}>
-        <h1 className={cn("logo")}>Nonshim Instagram</h1>
+        <h1 className={cn("logo")}>Instagram</h1>
         <div className="social-buttons">
           <img className={cn("kakao-button")} onClick={handleKakaoSignup} src="/image/kakaoLogin/kakao_login_largeBtn.png" />
           <img className={cn("naver-button")} onClick={handleNaverSignup} src="/image/naverLogin/naver_login_mediumBtn.png" />
