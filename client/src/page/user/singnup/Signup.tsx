@@ -13,17 +13,18 @@ const Signup: React.FC = () => {
   const handleKakaoSignup = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('카카오 로그인 시도!');
-    const CLIENT_ID = process.env.REACT_APP_CLIENT_ID; 
-    const REDIRECT_KAKAO_URI = process.env.REACT_APP_REDIRECT_KAKAO_URI;
-    window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_KAKAO_URI}&response_type=code`;
+    const KAKAO_CLIENT_ID = process.env.REACT_APP_KAKAO_CLIENT_ID; 
+    const REDIRECT_URI = process.env.REACT_APP_REDIRECT_URI;
+    window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=${KAKAO_CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=code`;
   };
 
   const handleNaverSignup = (e: React.FormEvent) => {
     e.preventDefault();
-    //naver로그인 추가
     console.log('네이버 로그인 시도!');
-    window.location.href = `https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=CLIENT_ID&state=STATE_STRING&redirect_uri=CALLBACK_URL
-    `;
+    const NAVER_CLIENT_ID = process.env.REACT_APP_NAVER_CLIENT_ID; 
+    const REDIRECT_URI = process.env.REACT_APP_REDIRECT_URI;
+    const STATE = "INSTAGRAM"; //cross-site request forgery 방지를 위한 값
+    window.location.href = `https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=${NAVER_CLIENT_ID}&state=${STATE}_STRING&redirect_uri=${REDIRECT_URI}`;
   };
 
   return (
